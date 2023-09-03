@@ -6,12 +6,13 @@ import { MotivationCard } from './src/components/MotivationCard';
 export default function App() {
   return (
     <View style={styles.container}>
-
       <StatusBar translucent style="auto" />
       <View>
-        <Text>Motivation U</Text>
+        <Text style={styles.title}>Motivation U</Text>
       </View>
-      <MotivationCard />
+      <View style={styles.motivationCardContainer}>
+        <MotivationCard />
+      </View>
     </View>
   );
 }
@@ -21,7 +22,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.gray800,
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: 25
+    padding: 25,
+    gap: 100
   },
+  title: {
+    color: colors.purple700,
+    fontWeight: '700',
+    fontSize: 30,
+    marginTop: 100
+  },
+  motivationCardContainer: {
+    width: '100%',
+    alignSelf: 'center',
+  }
 });

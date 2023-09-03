@@ -1,6 +1,7 @@
 export const colors = {
   white: '#FFF',
 
-  gray300: '#EDEDED',
-  gray800: '#333'
+  gray800: '#333',
+
+  purple700: '#7E00FF'
 }
