@@ -6,7 +6,11 @@ import { MotivationCard } from './src/components/MotivationCard';
 export default function App() {
   return (
     <View style={styles.container}>
+
       <StatusBar translucent style="auto" />
+      <View>
+        <Text>Motivation U</Text>
+      </View>
       <MotivationCard />
     </View>
   );
