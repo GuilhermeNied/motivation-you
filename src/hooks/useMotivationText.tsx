@@ -10,9 +10,6 @@ export function useMotivationText() {
     setMotivationText(randomMotivationText)
   }
 
-  useEffect(() => {
-    getRandomNewMotivationText()
-  }, [])
 
   return {
     motivationText,

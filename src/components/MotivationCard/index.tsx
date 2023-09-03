@@ -31,9 +31,9 @@ export function MotivationCard() {
   return (
     <TouchableOpacity activeOpacity={0.8} onPress={handleGetANewMotivationText} style={[styles.motivationCardContainer, { backgroundColor: color }]}>
       <Text style={styles.motivationCardText}>
-        {motivationText}
+        {motivationText ? motivationText : 'Clique aqui!'}
       </Text>
-      <Text style={styles.motivationCardHelpText}>Clique aqui para  gerar uma nova motivação</Text>
+      <Text style={styles.motivationCardHelpText}>{motivationText ? 'Clique aqui para gerar uma nova motivação' : ''}</Text>
     </TouchableOpacity>
   )
 }
@@ -43,8 +43,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
+    minHeight: 230,
     borderRadius: 20,
-    gap: 10,
+    gap: 27,
     padding: 25
 
   },
